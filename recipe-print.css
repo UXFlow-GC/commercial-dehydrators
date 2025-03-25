@@ -1,0 +1,9 @@
+@media print {
+  body > header,
+  body > footer,
+  body > header > nav,
+  .eapps-social-share-buttons {
+    display: none !important;
+  }
+
+}
