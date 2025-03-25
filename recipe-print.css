@@ -1,9 +1,11 @@
 @media print {
-  body > header,
-  body > footer,
-  body > header > nav,
+  .body-9 > header,
+  .body-9 > footer,
   .eapps-social-share-buttons {
     display: none !important;
+    visibility: hidden;
+    opacity: 0;
   }
+
 
 }
