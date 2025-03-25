@@ -1,14 +1,59 @@
 @media print {
-  .header,
-  .eapps-social-share-buttons,
-  section.blog-post .blogpost,
-  section.blog-post .blog,
-  .store-benefits-footer,
-  .newsletter-footer-section,
-  .cd-footer {
-    display: none !important;
-    visibility: hidden !important;
-    opacity: 0 !important;
+  * {
+    -webkit-print-color-adjust: exact;
   }
 
+  .header,
+  .header-spacer,
+  .eapps-social-share-buttons,
+  section.blog-post .blogpost,
+  .store-benefits-footer,
+  .newsletter-footer-section,
+  .cd-footer,
+  #chat-widget-container {
+    display: none !important;
+  }
+
+  .internal-hero {
+    min-height: 0;
+    background: none !important;
+  }
+  .internal-hero .hero-overlay {
+    display: none;
+  }
+  .internal-hero .nutrition-hero {
+    padding: 0;
+    box-shadow: none;
+  }
+  .internal-hero .nutrition-heading {
+    font-size: 2rem;
+    color: black;
+  }
+  .internal-hero .back-to-recipes .light-theme.centered,
+  .internal-hero .light-theme.centered {
+    font-size: 1rem;
+    color: black;
+    margin-bottom: 0;
+  }
+  .internal-hero .w-embed,
+  .internal-hero .scroll-down-link {
+    display: none !important
+  }
+
+  section.blog-post {
+    padding: 0 !important;
+    background-color: white;
+    margin-top: 2rem;
+  }
+  .blog-container .column.white {
+    padding: 0;
+    box-shadow: none;
+  }
+  .blog-container a[href="#continue"],
+  .blog-container .more-recipies,
+  .blog-container .w-button,
+  .blog-container .subheading-3.left,
+  .blog-container .author-block {
+    display: none;
+  }
 }
