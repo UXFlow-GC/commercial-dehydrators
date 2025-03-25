@@ -1,11 +1,14 @@
 @media print {
-  .body-9 > header,
-  .body-9 > footer,
-  .eapps-social-share-buttons {
+  .header,
+  .eapps-social-share-buttons,
+  section.blog-post .blogpost,
+  section.blog-post .blog,
+  .store-benefits-footer,
+  .newsletter-footer-section,
+  .cd-footer {
     display: none !important;
-    visibility: hidden;
-    opacity: 0;
+    visibility: hidden !important;
+    opacity: 0 !important;
   }
-
 
 }
